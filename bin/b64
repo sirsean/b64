@@ -16,4 +16,20 @@ elsif arg.decode?
   end
 else
   puts "Usage:"
+  puts "\tb64 ?\t\t\tThis usage message."
+  puts "\tb64 enc <input>\t\tBase64-encode the input string(s)."
+  puts "\tb64 dec <input>\t\tBase64-decode the input string(s)."
+  puts
+  puts "Examples:"
+  puts "\tb64 enc input"
+  puts "\t\tinput => aW5wdXQ="
+  puts "\tb64 encode input string"
+  puts "\t\tinput => aW5wdXQ="
+  puts "\t\tstring => c3RyaW5n"
+  puts "\tb64 dec input"
+  puts "\t\taW5wdXQ= => input"
+  puts "\tb64 decode input string"
+  puts "\t\taW5wdXQ= => input"
+  puts "\t\tc3RyaW5n => string"
+  
 end
