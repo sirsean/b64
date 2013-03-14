@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'b64'
+
+arg = B64::Arg.parse(ARGV)
+
+if arg.encode?
+  arg.fields.each do |field|
+    engine = B64::Engine.new(:plain => field)
+    puts "#{field} => #{engine.encode}"
+  end
+elsif arg.decode?
+  arg.fields.each do |field|
+    engine = B64::Engine.new(:base64 => field)
+    puts "#{field} => #{engine.decode}"
+  end
+else
+  puts "Usage:"
+end
