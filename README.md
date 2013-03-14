@@ -41,6 +41,7 @@ or
 b64 d <input>
 b64 dec <input>
 b64 decode <input>
+```
 
 ##License
 
