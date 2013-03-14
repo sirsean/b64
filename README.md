@@ -35,7 +35,7 @@ b64 enc <input>
 b64 encode <input>
 ```
 
-or
+### Decode
 
 ```
 b64 d <input>
